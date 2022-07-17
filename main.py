@@ -12,7 +12,11 @@ def window():
 
     label = QtWidgets.QLabel(win)
     label.setText("gaga")
-    label.move(50, 50)
+    label.move(200, 50)
+
+    b1 = QtWidgets.QPushButton(win)
+    b1.setText("Click me")
+
     win.show()
     sys.exit(app.exec_())
 
