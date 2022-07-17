@@ -7,6 +7,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 def clicked():
     print("clicked")
 
+
 def window():
     app = QApplication(sys.argv)
     win = QMainWindow()
