@@ -4,6 +4,9 @@ from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
 
+def clicked():
+    print("clicked")
+
 def window():
     app = QApplication(sys.argv)
     win = QMainWindow()
@@ -16,6 +19,7 @@ def window():
 
     b1 = QtWidgets.QPushButton(win)
     b1.setText("Click me")
+    b1.clicked.connect(clicked)
 
     win.show()
     sys.exit(app.exec_())
