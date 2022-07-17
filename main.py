@@ -22,7 +22,10 @@ class MyWindows(QMainWindow):
 
     def clicked(self):
         self.label.setText("you press the button")
+        self.update()
 
+    def update(self):
+        self.label.adjustSize()
 
 
 
